@@ -14,26 +14,26 @@ function Navbar() {
         </li>
         <li>
           <Link
-            to="/category/bicicletas+ruta"
+            to="/category/accesorios+bicicleta"
             className="text-gray-400 hover:text-white transition duration-200 text-lg"
           >
-            Bicicletas de Ruta
+            Accesorios Bicicleta
           </Link>
         </li>
         <li>
           <Link
-            to="/category/bicicleta+montana"
+            to="/category/vestimenta+bicicleta"
             className="text-gray-400 hover:text-white transition duration-200 text-lg"
           >
-            Bicicletas de Montaña
+            Vestimenta Bicicleta
           </Link>
         </li>
         <li>
           <Link
-            to="/category/bicicleta+paseo"
+            to="/category/componentes+bicicleta"
             className="text-gray-400 hover:text-white transition duration-200 text-lg"
           >
-            Bicicletas de Paseo
+            Componentes Bicicleta
           </Link>
         </li>
       </ul>
