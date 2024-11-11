@@ -1,0 +1,198 @@
+const inventario = [
+  {
+    id: 1,
+    title: "Bicicleta de Montaña Alpha",
+    description:
+      "Bicicleta de montaña con suspensión delantera para terrenos difíciles.",
+    img: "https://example.com/mountain-bike1.jpg",
+    category: "Montaña",
+    price: 1200,
+    stock: 5,
+  },
+  {
+    id: 2,
+    title: "Bicicleta de Ruta Speedster",
+    description: "Bicicleta de ruta ligera y aerodinámica para alta velocidad.",
+    img: "https://example.com/road-bike1.jpg",
+    category: "Ruta",
+    price: 1500,
+    stock: 8,
+  },
+  {
+    id: 3,
+    title: "Bicicleta Urbana Eco",
+    description:
+      "Bicicleta urbana con diseño ergonómico y materiales sostenibles.",
+    img: "https://example.com/urban-bike1.jpg",
+    category: "Urbana",
+    price: 800,
+    stock: 12,
+  },
+  {
+    id: 4,
+    title: "Bicicleta Plegable Compacta",
+    description:
+      "Bicicleta plegable ideal para llevar en el transporte público.",
+    img: "https://example.com/folding-bike1.jpg",
+    category: "Plegable",
+    price: 950,
+    stock: 10,
+  },
+  {
+    id: 5,
+    title: "Bicicleta BMX Pro",
+    description: "Bicicleta BMX diseñada para acrobacias y saltos extremos.",
+    img: "https://example.com/bmx-bike1.jpg",
+    category: "BMX",
+    price: 700,
+    stock: 15,
+  },
+  {
+    id: 6,
+    title: "Bicicleta Eléctrica City",
+    description: "Bicicleta eléctrica para un transporte urbano eficiente.",
+    img: "https://example.com/electric-bike1.jpg",
+    category: "Eléctrica",
+    price: 2300,
+    stock: 6,
+  },
+  {
+    id: 7,
+    title: "Bicicleta de Montaña Xtreme",
+    description:
+      "Resistente y potente, ideal para aventuras en terrenos montañosos.",
+    img: "https://example.com/mountain-bike2.jpg",
+    category: "Montaña",
+    price: 1800,
+    stock: 4,
+  },
+  {
+    id: 8,
+    title: "Bicicleta de Ruta Carbon",
+    description:
+      "Bicicleta de ruta hecha de fibra de carbono para mayor ligereza.",
+    img: "https://example.com/road-bike2.jpg",
+    category: "Ruta",
+    price: 2800,
+    stock: 5,
+  },
+  {
+    id: 9,
+    title: "Bicicleta Urbana Comfort",
+    description: "Diseño cómodo para trayectos cortos en la ciudad.",
+    img: "https://example.com/urban-bike2.jpg",
+    category: "Urbana",
+    price: 750,
+    stock: 20,
+  },
+  {
+    id: 10,
+    title: "Bicicleta Eléctrica Offroad",
+    description:
+      "Bicicleta eléctrica con ruedas robustas para caminos irregulares.",
+    img: "https://example.com/electric-bike2.jpg",
+    category: "Eléctrica",
+    price: 3100,
+    stock: 3,
+  },
+  {
+    id: 11,
+    title: "Bicicleta BMX Street",
+    description: "BMX ligera y resistente para acrobacias urbanas.",
+    img: "https://example.com/bmx-bike2.jpg",
+    category: "BMX",
+    price: 850,
+    stock: 18,
+  },
+  {
+    id: 12,
+    title: "Bicicleta Plegable Ultralight",
+    description: "Bicicleta plegable ultraligera para fácil almacenamiento.",
+    img: "https://example.com/folding-bike2.jpg",
+    category: "Plegable",
+    price: 1200,
+    stock: 8,
+  },
+  {
+    id: 13,
+    title: "Bicicleta de Montaña Pro",
+    description: "Bicicleta profesional de montaña con doble suspensión.",
+    img: "https://example.com/mountain-bike3.jpg",
+    category: "Montaña",
+    price: 2500,
+    stock: 2,
+  },
+  {
+    id: 14,
+    title: "Bicicleta de Ruta Aero",
+    description:
+      "Bicicleta de carretera aerodinámica para carreras de velocidad.",
+    img: "https://example.com/road-bike3.jpg",
+    category: "Ruta",
+    price: 2000,
+    stock: 6,
+  },
+  {
+    id: 15,
+    title: "Bicicleta Urbana Classic",
+    description: "Bicicleta urbana de estilo clásico con asiento acolchado.",
+    img: "https://example.com/urban-bike3.jpg",
+    category: "Urbana",
+    price: 670,
+    stock: 25,
+  },
+  {
+    id: 16,
+    title: "Bicicleta Eléctrica Foldable",
+    description: "Bicicleta eléctrica plegable para trayectos urbanos.",
+    img: "https://example.com/electric-bike3.jpg",
+    category: "Eléctrica",
+    price: 2200,
+    stock: 5,
+  },
+  {
+    id: 17,
+    title: "Bicicleta BMX Freestyle",
+    description: "Bicicleta BMX para estilo libre y acrobacias.",
+    img: "https://example.com/bmx-bike3.jpg",
+    category: "BMX",
+    price: 950,
+    stock: 12,
+  },
+  {
+    id: 18,
+    title: "Bicicleta de Montaña Trail",
+    description:
+      "Bicicleta de montaña perfecta para senderos y caminos escarpados.",
+    img: "https://example.com/mountain-bike4.jpg",
+    category: "Montaña",
+    price: 2100,
+    stock: 7,
+  },
+  {
+    id: 19,
+    title: "Bicicleta de Ruta ProRace",
+    description: "Bicicleta profesional de ruta para competiciones.",
+    img: "https://example.com/road-bike4.jpg",
+    category: "Ruta",
+    price: 3200,
+    stock: 3,
+  },
+  {
+    id: 20,
+    title: "Bicicleta Urbana EcoSport",
+    description: "Bicicleta urbana con materiales reciclados.",
+    img: "https://example.com/urban-bike4.jpg",
+    category: "Urbana",
+    price: 890,
+    stock: 10,
+  },
+];
+
+export const enviarInventario = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(inventario);
+    }, 3000);
+  });
+};
